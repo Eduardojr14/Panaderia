@@ -1,0 +1,15 @@
+//BOTONES FORM
+.botones {
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.boton_enviar {
+    @extend .botones;
+    background-color: #06c706b6;
+}
+.boton_clear {
+    @extend .botones;
+    background-color: #00b3b3cb;
+}

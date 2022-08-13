@@ -1,0 +1,41 @@
+//Bucles
+@for $marginTop from 1 through 10 {
+    .marginTop-#{$marginTop}{
+        margin-top: 5px * $marginTop;
+    }
+}
+
+@for $marginBo from 1 through 10 {
+    .marginBo-#{$marginBo}{
+        margin-bottom: 5px * $marginBo;
+    }
+}
+//MAP GET PRODUCTOS
+$productos: (
+    bradius: 5px,
+    bgcolor: #bb695b,  
+    color: white,
+    bacolor: #c5b39c,
+    colorba: black,
+);
+.pro1 {
+    border-radius: map-get($productos, bradius);
+    background-color: map-get($productos, bgcolor);
+    color: map-get($productos, color);
+}
+.pro2 {
+    border-radius: map-get($productos, bradius);
+    background-color:map-get($productos, bacolor);
+    color: map-get($productos, colorba);
+
+}
+//MAP GET NOSOTROS
+$nosotros: (
+    borderT: solid 3px #208b20,
+    borderB: solid 3px #208b20,
+
+);
+.subti_nos h2 {
+    border-top: map-get($nosotros, borderT );
+    border-bottom: map-get($nosotros, borderB );
+}
